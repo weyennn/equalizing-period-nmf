@@ -1,6 +1,6 @@
 """Ringkasan 15 konfigurasi (5 random state x K = 15, 20, 25) untuk korpus bersih.
 
-Perhitungan galat sama dengan ../korpus_bersih_2026-10-05/ringkas_multiseed.py. Tambahan: galat September-Desember,
+Galat dihitung ulang dari model dan matriks validasi yang tersimpan (RRE per periode, makro, mikro). Juga dihitung: galat September-Desember,
 rata-rata dan SD per K, jumlah konfigurasi dengan galat makro lebih rendah daripada S1, serta rentang c_v dan TD.
 Konfigurasi yang belum selesai (tanpa run_manifest.json) dilewati. Pemakaian: python ringkas_15.py
 """

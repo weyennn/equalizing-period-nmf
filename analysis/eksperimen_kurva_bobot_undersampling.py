@@ -1,4 +1,4 @@
-"""Eksperimen tambahan paper (26 Oktober 2026): kurva eksponen bobot dan undersampling pada ke-15 konfigurasi.
+"""Kurva eksponen bobot dan undersampling pada ke-15 konfigurasi.
 
 Bobot periode dalam fungsi objektif dibuat (n_bar / n_p)^beta, artinya baris dikali (n_bar / n_p)^(beta / 2).
 beta = 0 adalah S1 dan beta = 1 adalah S2 (model tersimpan dipakai apa adanya); yang dilatih di sini beta = 0,5; 1,5; 2.

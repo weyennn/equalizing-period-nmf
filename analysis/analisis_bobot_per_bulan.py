@@ -1,4 +1,4 @@
-"""Analisis tambahan untuk paper v2 (20 Oktober 2026): galat validasi per bulan dan interval bootstrap pada ke-15 konfigurasi.
+"""Galat validasi per bulan dan interval bootstrap pada ke-15 konfigurasi.
 
 Hanya membaca keluaran outputs/korpus_bersih_15konfigurasi_2026-10-20/ (model NMF, X_base_valid, split_ledger,
 bobot dokumen); tidak melatih ulang model. Perhitungan galat sama dengan ringkas_15.py (H dipakai langsung pada S3/S4).

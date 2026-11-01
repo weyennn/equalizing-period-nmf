@@ -71,7 +71,7 @@ def preprocess(text: str, stopwords: set[str] | None = None) -> str:
     Note: we intentionally skip stemming in the baseline for two reasons:
       1. Sastrawi stemming on 48k+ documents is very slow (~hours);
       2. Not stemming keeps interpretable surface forms in top-words output,
-         which is important for thesis reporting and penguji review.
+         which keeps the topics easy to read and check.
     Stemming sensitivity can be tested as a separate experiment if needed.
     """
     return remove_stopwords(clean_text(text), stopwords)

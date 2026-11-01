@@ -10,7 +10,7 @@ from scipy import sparse
 warnings.filterwarnings("ignore")
 
 R = Path(sys.argv[1]); OUT = Path(sys.argv[2])
-ORIG = Path(ROOT / "outputs/global_nmf_temporal_locked_rerun_hardened_2026-08-20")
+ORIG = Path(ROOT / "outputs/uncleaned_reference_r42_k20")
 DS0 = ROOT / "data/processed/politik_full_year_2024_experiment_qc.csv"
 SC = ["S1_baseline", "S2_document_weighting", "S3_temporal_tfidf", "S4_dual_level"]
 ds = pd.read_csv(DS0, usecols=["Link", "Content_clean"])

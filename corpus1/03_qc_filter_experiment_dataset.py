@@ -216,7 +216,7 @@ Dataset ini tidak menggantikan clean base dataset. Dataset ini adalah versi eksp
 4. kandidat non-politik/general news dihapus secara konservatif berbasis negative keyword tanpa political keyword;
 5. boilerplate web dibersihkan dari `Content_clean`.
 
-Untuk tesis, laporkan dataset clean base dan dataset eksperimen final secara terpisah agar provenance jelas.
+Dataset clean base dan dataset eksperimen final dilaporkan terpisah agar asal-usul data jelas.
 """
     report_md.write_text(text, encoding="utf-8")
 

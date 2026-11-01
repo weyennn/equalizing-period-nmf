@@ -1,4 +1,4 @@
-"""Analisis tambahan paper (27 Oktober 2026): apa yang berubah pada topik bagi analis.
+"""Apa yang berubah pada topik bagi analis.
 
 Untuk setiap konfigurasi, topik setiap varian dicocokkan satu-satu dengan topik S1 (algoritme Hungaria pada kosinus baris H).
 Topik tanpa padanan: kosinus < 0,5. Bulan puncak topik: bulan dengan lift tertinggi, lift = prevalensi topik pada bulan itu

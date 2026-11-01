@@ -1,6 +1,6 @@
-"""Korpus kedua paper (27 Oktober 2026): HuffPost News Category Dataset v3, kategori POLITICS 2014–2022, periode = tahun.
+"""Korpus kedua: HuffPost News Category Dataset v3, kategori POLITICS 2014–2022, periode = tahun.
 
-Protokol sama dengan korpus utama (outputs/korpus_bersih_15konfigurasi_2026-10-20/ dan skrip analisis paper):
+Protokol sama dengan korpus utama (outputs/korpus_bersih_15konfigurasi_2026-10-20/ dan skrip di analysis/):
 - Teks = judul + ringkasan; prapemrosesan clean_text (pipeline/preprocessing.py) dengan stopword
   NLTK bahasa Inggris dan token > 2 huruf; dokumen dengan < 5 token dibuang; duplikat tautan dan teks dibuang.
 - Pembagian 80/20 terstratifikasi tahun (split_train_validation) untuk random state 7, 21, 42, 84, 123; K = 15, 20, 25.

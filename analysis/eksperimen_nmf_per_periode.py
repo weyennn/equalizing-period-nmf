@@ -1,4 +1,4 @@
-"""Eksperimen tambahan paper (27 Oktober 2026): NMF per periode dua lapis (pembanding dari literatur) pada ke-15 konfigurasi.
+"""NMF per periode dua lapis (pembanding dari literatur) pada ke-15 konfigurasi.
 
 Mengikuti pendekatan dua lapis Greene dan Cross (2017): lapis 1, NMF dengan K topik pada data latih setiap bulan secara
 terpisah; lapis 2, NMF dengan K topik pada tumpukan topik bulanan (baris H tiap bulan dinormalkan L2), sehingga setiap

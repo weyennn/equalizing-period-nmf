@@ -1,6 +1,6 @@
-"""Run the locked S1-S4 Global NMF temporal-weighting experiment.
+"""Run the S1-S4 global NMF period-weighting experiment with fixed settings.
 
-This is the canonical rerun entry point. It enforces one month-stratified 80:20
+This is the main entry point. It enforces one month-stratified 80:20
 split, a train-only TF-IDF vocabulary, the square-root document weight,
 row-normalized Temporal TF-IDF, and common-space validation/evaluation.
 """
@@ -48,7 +48,7 @@ from temporal_nmf_pipeline import (
 
 DATASET = PROCESSED_DATA_DIR / "politik_full_year_2024_experiment_qc.csv"
 EXPECTED_DATASET_SHA256 = "8d384717ce9f8576816d43312c8dd6815ad05df3110fea32fc0cad43a65b0187"
-OUTPUT_ROOT = OUTPUT_DIR / "global_nmf_temporal_locked_rerun"
+OUTPUT_ROOT = OUTPUT_DIR / "global_nmf_weighting_run"
 RANDOM_STATE = 42
 VALIDATION_FRACTION = 0.20
 N_TOPICS = 20
@@ -534,7 +534,7 @@ def run(config: RunConfig, dataset_path: Path = DATASET, output_dir: Path = OUTP
     }
     if not all(hard_qc.values()):
         failed = [name for name, passed in hard_qc.items() if not passed]
-        raise AssertionError(f"Locked-method QC failed: {failed}")
+        raise AssertionError(f"Method QC failed: {failed}")
 
     source_artifact_file_sha256 = {
         path.relative_to(output_dir).as_posix(): sha256_file(path)

@@ -1,4 +1,4 @@
-"""Eksperimen tambahan paper (27 Oktober 2026): Fairer-NMF (Kassab et al. 2026) dengan bulan sebagai kelompok, korpus pertama.
+"""Fairer-NMF (Kassab et al. 2026) dengan bulan sebagai kelompok, korpus pertama.
 
 Fairer-NMF versi MU (fairer_nmf.py, setara dengan kode resmi; lihat uji_fairer_nmf.py), aturan bobot kelompok
 'decaying_lr', inisialisasi acak default_rng(random_state), 1.000 iterasi penuh. Penyimpangan dari pengaturan bawaan kode

@@ -1,4 +1,4 @@
-"""Audit and clean the thesis dataset for defensible experiments.
+"""Audit and clean the first-corpus dataset before the experiments.
 
 Input:
     03_dataset/data/processed/politik_full_year_2024.csv
@@ -205,9 +205,9 @@ JSON report:
 - Duplicate link rows after cleaning: {after['duplicate_link_rows']:,}
 - Missing source after cleaning: {after['missing_source']:,}
 
-## Thesis Note
+## Catatan
 
-Dataset bersih ini menjadi kandidat dataset final untuk eksperimen utama. Semua angka pada Bab 4 sebaiknya memakai jumlah final dari file ini agar konsisten dan defensible saat seminar.
+Dataset bersih ini menjadi dasar dataset eksperimen utama; jumlah dokumen yang dilaporkan diambil dari berkas ini agar konsisten.
 """
     CLEANING_REPORT_MD.write_text(md, encoding="utf-8")
 

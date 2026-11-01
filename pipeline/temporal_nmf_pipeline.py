@@ -1,7 +1,7 @@
-"""Code-faithful core utilities for the locked Global NMF temporal experiment.
+"""Core utilities for the global NMF period-weighting experiment.
 
 The module keeps mathematical transformations separate from filesystem output so
-that the locked invariants can be tested without running the full corpus.
+that the fixed settings can be tested without running the full corpus.
 """
 from __future__ import annotations
 
@@ -127,7 +127,7 @@ def build_scenario_matrices(
     x_temporal_train: sparse.spmatrix,
     document_weights: np.ndarray,
 ) -> dict[str, sparse.csr_matrix]:
-    """Build the four locked train matrices S1-S4."""
+    """Build the four training matrices S1-S4."""
     x_base = sparse.csr_matrix(x_base_train)
     x_temporal = sparse.csr_matrix(x_temporal_train)
     weights = np.asarray(document_weights, dtype=float)
@@ -267,7 +267,7 @@ def compute_cv_coherence(
         from gensim.models import CoherenceModel
     except Exception as exc:  # pragma: no cover - depends on external binary environment
         raise RuntimeError(
-            "Gensim could not be imported. Use the isolated rerun environment recorded by the pipeline."
+            "Gensim could not be imported. Install the versions in requirements.txt."
         ) from exc
 
     dictionary = Dictionary(coherence_corpus)

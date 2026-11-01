@@ -1,6 +1,6 @@
-"""Analisis tambahan paper (26 Oktober 2026): S3*/S4* pada ke-15 konfigurasi.
+"""S3*/S4* pada ke-15 konfigurasi.
 
-Basis S3/S4 dipelajari di ruang Temporal TF-IDF. Pada evaluasi tesis/paper, H dipakai langsung pada X_val ruang dasar.
+Basis S3/S4 dipelajari di ruang Temporal TF-IDF. Pada evaluasi utama, H dipakai langsung pada X_val ruang dasar.
 Di sini H juga diproyeksikan balik ke ruang dasar (H / tidf, lalu norma tiap baris H dikembalikan), mengikuti
 corpus1/eval_sim.py. Hanya membaca keluaran
 outputs/korpus_bersih_15konfigurasi_2026-10-20/; tidak melatih ulang model.

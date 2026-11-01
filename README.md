@@ -92,7 +92,7 @@ run one configuration per call and have a `ringkas` mode that summarizes all 15.
 
 The uncleaned reference run of Table 8 is
 `python -I pipeline/08_run_weighting_experiments.py --dataset data/processed/politik_full_year_2024_experiment_qc.csv
---output-dir outputs/global_nmf_temporal_locked_rerun_hardened_2026-08-20` (random state 42, K = 20).
+--output-dir outputs/uncleaned_reference_r42_k20` (random state 42, K = 20).
 
 `analysis/uji_fairer_nmf.py` checks the sparse reimplementation of Fairer NMF against the official code on random data
 (it needs a copy of `fairnmf.py` from <https://github.com/ErinGeorge/Fairer-NMF>). `analysis/cv_korpus1_varian.py`
